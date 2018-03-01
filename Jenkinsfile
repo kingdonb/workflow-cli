@@ -72,8 +72,8 @@ node(linux) {
 	}
 }
 
-def test_image = "quay.io/deisci/workflow-cli-dev:${git_commit.take(7)}"
-def mutable_image = 'quay.io/deisci/workflow-cli-dev:latest'
+def test_image = "quay.io/kingdonb/workflow-cli-dev:${git_commit.take(7)}"
+def mutable_image = 'quay.io/kingdonb/workflow-cli-dev:latest'
 
 node(linux) {
 		stage 'Build and push test container'
